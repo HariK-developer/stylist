@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const baseFont = localFont({
+  src: "./fonts/NotoSans-SemiBold.ttf",
+  display: "swap",
+  variable: "--font-base-noto",
+});
+
+const subFont = localFont({
+  src: "./fonts/NotoSans-SemiBoldItalic.ttf",
+  display: "swap",
+  variable: "--font-notSans-italic",
+});
 
 export const metadata: Metadata = {
   title: "Stylist",
@@ -16,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${baseFont.variable} ${subFont.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
