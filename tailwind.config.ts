@@ -16,6 +16,8 @@ const config: Config = {
       fontFamily : {
         noto: ['var(--font-base-noto)'],
         notoSubFont: ['var(--font-notSans-italic)'],
+        notoMedium: ['var(--font-notSans-medium)'],
+        notoRegular: ['var(----font-notSans-regular)']
       }
     },
   },
