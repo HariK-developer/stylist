@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Login() {
   return (
     <div className="bg-[#1E1E1E] min-h-screen flex items-center">
@@ -9,18 +11,44 @@ export default function Login() {
           <p className="text-white text-2xl font-notoSubFont">Skip the lag ?</p>
         </div>
       </div>
-      <div className="mr-12">
-        <div className="min-h-[560px] min-w-[360px]  rounded-[20px] border border-slate-300 shadow-lg shadow-slate-700">
-          <div className="flex flex-col  ml-8 mr-8">
+      <div className="mr-12 ">
+        <div className="min-h-[560px] min-w-[360px]  rounded-[20px] border border-slate-300 shadow-lg shadow-slate-700 relative ">
+          <div className='absolute top-[-20px] left-[-80px]'>
+            <Image src={`assets/login/top_ball.svg`} alt='top ball' height={200} width={200}></Image>
+          </div>
+          <div className='absolute bottom-[-30px] right-[-30px]'>
+            <Image src={`assets/login/bottom_ball.svg`} alt='bottom ball' height={130} width={130}></Image>
+          </div>
+          <div className="flex flex-col  ml-8 mr-8 mt-20">
             <p className="text-white font-noto text-2xl mb-1">Login</p>
             <p className="text-white text-xs font-notoMedium mb-2">Glad you are back.!</p>
-            <input className=" font-notoRegular bg-transparent border border-slate-300 rounded-[12px] h-9 mb-3 placeholder:text-white px-2" type="text" placeholder="Username"  />
+            <input className=" font-notoRegular bg-transparent border border-slate-300 rounded-[12px] h-9 mb-3 placeholder:text-white px-2" type="text" placeholder="Username" />
             <input className="font-notoRegular bg-transparent border border-slate-300 rounded-[12px] h-9 placeholder:text-white px-2 mb-2" type="text" placeholder="Password" />
-            <div className="flex mb-2 ">
+            <div className="flex mb-4 ">
               <input type="checkbox" /> <p className="text-white font-notoMedium text-xs ml-1">Remember me</p>
             </div>
-            <button className="text-white font-noto">Login</button>
-            <button className="text-white font-notoMedium text-xs">Forgot password ?</button>
+            <button className="text-white font-noto bg-gradient-to-r from-cyan-500 to-purple-900  h-9 rounded-xl mb-2">Login</button>
+            <button className="text-white font-notoMedium text-xs mb-8 cursor-pointer">Forgot password ?</button>
+            <div className="flex items-center mb-2">
+              <hr className="flex-grow border-t border-gray-300" />
+              <span className="px-4 text-gray-500 font-notoMedium">Or</span>
+              <hr className="flex-grow border-t border-gray-300" />
+            </div>
+            <div className="flex items-center justify-center gap-3 mb-16">
+              <Image className='cursor-pointer' src={`assets/login/google.svg`} alt='google' width={30} height={30}></Image>
+              <Image className='cursor-pointer' src={`assets/login/facebook.svg`} alt='facebook' width={30} height={30}></Image>
+              <Image className='cursor-pointer' src={`assets/login/X.svg`} alt='X' width={30} height={30}></Image>
+            </div>
+            <div className="flex flex-col items-center space-y-2">
+              <p className="text-white text-sm">
+                Don&apos;t have an account? <a href="#" className="text-white">Sign Up</a>
+              </p>
+              <div className="flex space-x-4">
+                <p className="text-white text-xs cursor-pointer">Terms & Conditions</p>
+                <p className="text-white text-xs cursor-pointer">Support</p>
+                <p className="text-white text-xs cursor-pointer">Customer Care</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
