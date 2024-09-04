@@ -18,8 +18,8 @@ export default function Login() {
           <div className="flex flex-col  ml-8 mr-8 mt-20">
             <p className="text-white font-noto text-2xl mb-1">Login</p>
             <p className="text-white text-xs font-notoMedium mb-2">Glad you are back.!</p>
-            <input className=" font-notoRegular bg-transparent border border-slate-300 rounded-[12px] h-9 mb-3 placeholder:text-white px-2" type="text" placeholder="Username" />
-            <input className="font-notoRegular bg-transparent border border-slate-300 rounded-[12px] h-9 placeholder:text-white px-2 mb-2" type="text" placeholder="Password" />
+            <input className="text-white font-notoRegular bg-transparent border border-slate-300 rounded-[12px] h-9 mb-3 placeholder:text-white px-2" type="text" placeholder="Username" />
+            <input  className="text-white font-notoRegular bg-transparent border border-slate-300 rounded-[12px] h-9 placeholder:text-white px-2 mb-2" type="text" placeholder="Password" />
             <div className="flex mb-4 ">
               <input type="checkbox" /> <p className="text-white font-notoMedium text-xs ml-1">Remember me</p>
             </div>
