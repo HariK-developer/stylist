@@ -11,14 +11,10 @@ export default function Login() {
           <p className="text-white text-2xl font-notoSubFont">Skip the lag ?</p>
         </div>
       </div>
-      <div className="mr-12 ">
-        <div className="min-h-[560px] min-w-[360px]  rounded-[20px] border border-slate-300 shadow-lg shadow-slate-700 relative ">
-          <div className='absolute top-[-20px] left-[-80px]'>
-            <Image src={`assets/login/top_ball.svg`} alt='top ball' height={200} width={200}></Image>
-          </div>
-          <div className='absolute bottom-[-30px] right-[-30px]'>
-            <Image src={`assets/login/bottom_ball.svg`} alt='bottom ball' height={130} width={130}></Image>
-          </div>
+      <div className="mr-12 relative">
+        <div className="min-h-[560px] min-w-[360px]  rounded-[20px] border border-slate-300 shadow-lg shadow-slate-700 relative  z-10 overflow-hidden" style={{
+          background: 'linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), transparent, transparent, rgba(0, 0, 0, 0.5))',
+        }}>
           <div className="flex flex-col  ml-8 mr-8 mt-20">
             <p className="text-white font-noto text-2xl mb-1">Login</p>
             <p className="text-white text-xs font-notoMedium mb-2">Glad you are back.!</p>
@@ -27,7 +23,7 @@ export default function Login() {
             <div className="flex mb-4 ">
               <input type="checkbox" /> <p className="text-white font-notoMedium text-xs ml-1">Remember me</p>
             </div>
-            <button className="text-white font-noto bg-gradient-to-r from-cyan-500 to-purple-900  h-9 rounded-xl mb-2">Login</button>
+            <button className="text-white font-noto bg-gradient-to-r from-cyan-500 to-purple-900  h-10 rounded-xl mb-2">Login</button>
             <button className="text-white font-notoMedium text-xs mb-8 cursor-pointer">Forgot password ?</button>
             <div className="flex items-center mb-2">
               <hr className="flex-grow border-t border-gray-300" />
@@ -50,6 +46,12 @@ export default function Login() {
               </div>
             </div>
           </div>
+        </div>
+        <div className='absolute top-[-20px] left-[-100px] z-0'>
+          <Image src={`assets/login/top_ball.svg`} alt='top ball' height={200} width={200}></Image>
+        </div>
+        <div className='absolute bottom-[-60px] right-[-30px]'>
+          <Image src={`assets/login/bottom_ball.svg`} alt='bottom ball' height={140} width={140}></Image>
         </div>
       </div>
     </div>
