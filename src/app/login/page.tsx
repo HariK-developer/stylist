@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 
 export default function Login() {
   return (
@@ -23,8 +24,8 @@ export default function Login() {
             <div className="flex mb-4 ">
               <input type="checkbox" /> <p className="text-white font-notoMedium text-xs ml-1">Remember me</p>
             </div>
-            <button className="text-white font-noto bg-gradient-to-r from-cyan-500 to-purple-900  h-10 rounded-xl mb-2">Login</button>
-            <button className="text-white font-notoMedium text-xs mb-8 cursor-pointer">Forgot password ?</button>
+            <button className="text-white font-noto bg-gradient-to-r from-[#628EFF] via-[#8740CD] to-[#580475]  h-10 rounded-xl mb-2">Login</button>
+            <button className="text-white font-notoMedium text-xs mb-8 cursor-pointer"><Link href="/forgot-password">Forgot Password</Link></button>
             <div className="flex items-center mb-2">
               <hr className="flex-grow border-t border-gray-300" />
               <span className="px-4 text-gray-500 font-notoMedium">Or</span>
@@ -37,7 +38,7 @@ export default function Login() {
             </div>
             <div className="flex flex-col items-center space-y-2">
               <p className="text-white text-sm">
-                Don&apos;t have an account? <a href="#" className="text-white">Sign Up</a>
+                Don&apos;t have an account? <a href="/sign-up" className="text-white">Sign Up</a>
               </p>
               <div className="flex space-x-4">
                 <p className="text-white text-xs cursor-pointer">Terms & Conditions</p>
