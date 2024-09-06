@@ -1,7 +1,7 @@
 import Login from "./login/page";
 
 
-export default function Home() {
+export default function App() {
   return (
    <Login></Login>
   );

@@ -20,11 +20,11 @@ export default function Login() {
             <p className="text-white font-noto text-2xl mb-1">Login</p>
             <p className="text-white text-xs font-notoMedium mb-2">Glad you are back.!</p>
             <input className="text-white font-notoRegular bg-transparent border border-slate-300 rounded-[12px] h-9 mb-3 placeholder:text-white px-2" type="text" placeholder="Username" />
-            <input  className="text-white font-notoRegular bg-transparent border border-slate-300 rounded-[12px] h-9 placeholder:text-white px-2 mb-2" type="text" placeholder="Password" />
+            <input className="text-white font-notoRegular bg-transparent border border-slate-300 rounded-[12px] h-9 placeholder:text-white px-2 mb-2" type="text" placeholder="Password" />
             <div className="flex mb-4 ">
               <input type="checkbox" /> <p className="text-white font-notoMedium text-xs ml-1">Remember me</p>
             </div>
-            <button className="text-white font-noto bg-gradient-to-r from-[#628EFF] via-[#8740CD] to-[#580475]  h-10 rounded-xl mb-2">Login</button>
+            <button className="text-white font-noto bg-gradient-to-r from-[#628EFF] via-[#8740CD] to-[#580475]  h-10 rounded-xl mb-2"><Link className='flex block w-full h-full items-center justify-center' href="/home">Login</Link></button>
             <button className="text-white font-notoMedium text-xs mb-8 cursor-pointer"><Link href="/forgot-password">Forgot Password</Link></button>
             <div className="flex items-center mb-2">
               <hr className="flex-grow border-t border-gray-300" />
