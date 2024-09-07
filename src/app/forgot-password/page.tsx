@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 
 export default function ForgotPassword() {
   return (
@@ -33,10 +33,10 @@ export default function ForgotPassword() {
           </div>
         </div>
         <div className='absolute top-[-20px] left-[-100px] z-0'>
-          <Image src={`assets/forgot-password/ball_b.svg`} alt='top ball' height={200} width={200}></Image>
+        <div className='bg-gradient-to-b from-[#61003A] from-0%  to-[#2D0A30] to-100% h-52 w-52 rounded-full'></div>
         </div>
         <div className='absolute bottom-[-60px] right-[-30px]'>
-          <Image src={`assets/forgot-password/ball_s.svg`} alt='bottom ball' height={140} width={140}></Image>
+        <div className='bg-gradient-to-b from-[#61004B] from-0%  to-[#220A30] to-100% h-36 w-36 rounded-full'></div>
         </div>
       </div>
     </div>

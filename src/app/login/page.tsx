@@ -49,10 +49,10 @@ export default function Login() {
           </div>
         </div>
         <div className='absolute top-[-20px] left-[-100px] z-0'>
-          <Image src={`assets/login/top_ball.svg`} alt='top ball' height={200} width={200}></Image>
+          <div className='bg-gradient-to-b from-[#530061] from-0%  to-[#0D0A30] to-100% h-52 w-52 rounded-full'></div>
         </div>
         <div className='absolute bottom-[-60px] right-[-30px]'>
-          <Image src={`assets/login/bottom_ball.svg`} alt='bottom ball' height={140} width={140}></Image>
+          <div className='bg-gradient-to-b from-[#300061] from-0%  to-[#0A1030] h-36 w-36 rounded-full'></div>
         </div>
       </div>
     </div>

@@ -46,10 +46,10 @@ export default function SignUp() {
           </div>
         </div>
         <div className='absolute top-[-20px] left-[-100px] z-0'>
-          <Image src={`assets/signUp/ball_big.svg`} alt='top ball' height={200} width={200}></Image>
+        <div className='bg-gradient-to-b from-[#190061] from-0%  to-[#0A1B30] to-100% h-52 w-52 rounded-full'></div>
         </div>
         <div className='absolute bottom-[-60px] right-[-30px]'>
-          <Image src={`assets/signUp/ball_small.svg`} alt='bottom ball' height={140} width={140}></Image>
+        <div className='bg-gradient-to-b from-[#000F61] from-0%  to-[#0A1730] to-100% h-36 w-36 rounded-full'></div>
         </div>
       </div>
     </div>
