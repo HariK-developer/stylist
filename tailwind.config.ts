@@ -18,7 +18,10 @@ const config: Config = {
         notoSubFont: ['var(--font-notSans-italic)'],
         notoMedium: ['var(--font-notSans-medium)'],
         notoRegular: ['var(----font-notSans-regular)']
-      }
+      },
+      boxShadow: {
+        'custom': '0 0 0 4px #4D4D4D, 2px 1px 6px 4px rgba(10, 10, 0, 0.5)',
+      },
     },
   },
   plugins: [],
