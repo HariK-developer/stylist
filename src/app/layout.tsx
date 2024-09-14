@@ -38,7 +38,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${baseFont.variable} ${subFont.variable} ${notoMedium.variable} ${notoRegular.variable}`}>
+      <head>
+        <link
+          rel="icon"
+          href="stylist.png"
+        />
+      </head>
+      <body
+        className={`${baseFont.variable} ${subFont.variable} ${notoMedium.variable} ${notoRegular.variable}`}
+      >
         {children}
       </body>
     </html>
