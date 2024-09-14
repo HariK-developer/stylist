@@ -1,3 +1,5 @@
+'use client'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleXmark,
@@ -5,10 +7,21 @@ import {
   faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import { faImage } from "@fortawesome/free-regular-svg-icons";
+import ProgressBar from "@/components/progressBar";
+import { useState } from "react";
 
 
 
 export default function Home() {
+  const [progressVisible, setProgressVisible] = useState(false);
+  function handleFileChange(event: any) {
+    console.log("I'm here");
+
+    if (event.target.files && event.target.files.length > 0) {
+      setProgressVisible(true); // Show the progress bar when a file is uploaded
+    }
+  }
+
   return (
     <div className="bg-[#1E1E1E] min-h-screen flex items-center">
       <div className="w-8/12 flex flex-col ml-12 ">
@@ -38,9 +51,9 @@ export default function Home() {
                   className="bg-[#A6A6A6] p-0.2 rounded-lg inline-block shadow-lg"
                   style={{ boxShadow: "-25px -5px 30px  #747474" }}
                 >
-                  <FontAwesomeIcon
-                    width={50}
-                    height={40}
+                  <FontAwesomeIcon className="h-12 w-16"
+                    // width={80}
+                    // height={70}
                     icon={faImage}
                     color="#5C5C5C"
                   />
@@ -61,9 +74,18 @@ export default function Home() {
               className="hidden"
               type="file"
               accept=".png, .jpeg, .jpg"
+              onChange={handleFileChange}
 
             />
             <div className="shadow-custom border border-dashed border-2 border-[#ffffff8b] p-5 rounded-xl h-52 bg-[#393939] rotate-[-10deg] z-0 w-11/12 absolute"></div>
+
+            {progressVisible && (
+              <div className="absolute top-0 left-0 w-full flex justify-center mt-64 items-center z-50">
+                <ProgressBar />
+              </div>
+            )}
+
+
           </div>
           <div className="relative flex justify-between  mt-[350px] mr-4 ml-4">
             <div className="flex items-center justify-center gap-1 bg-gray-600 text-white font-medium text-xs font-nato py-2 px-3 rounded cursor-pointer hover:bg-slate-500">
@@ -80,3 +102,4 @@ export default function Home() {
     </div>
   );
 }
+
