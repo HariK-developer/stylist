@@ -15,8 +15,6 @@ import { useState } from "react";
 export default function Home() {
   const [progressVisible, setProgressVisible] = useState(false);
   function handleFileChange(event: any) {
-    console.log("I'm here");
-
     if (event.target.files && event.target.files.length > 0) {
       setProgressVisible(true); // Show the progress bar when a file is uploaded
     }
