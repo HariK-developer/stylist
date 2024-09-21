@@ -19,8 +19,8 @@ export default function Gallery() {
     autoplaySpeed: 2000,
     cssEase: "linear",
     afterChange: () => setUpdateCount(updateCount + 1),
-    beforeChange: (current, next: any) => setSlideIndex(next),
-    appendDots: dots => (
+    beforeChange: (current: any, next: any) => setSlideIndex(next),
+    appendDots: (dots: any)  => (
       <div
         style={{
           display: "flex",
