@@ -8,7 +8,7 @@ import { useState,useRef } from 'react';
 export default function Gallery() {
   const [slideIndex, setSlideIndex] = useState(0);
   const [updateCount, setUpdateCount] = useState(0);
-  let sliderRef = useRef(null);
+  let sliderRef: any = useRef(null);
   const settings = {
     dots: true,
     // infinite: true,
