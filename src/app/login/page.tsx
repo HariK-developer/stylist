@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Login() {
   return (
     <div className="bg-[#1E1E1E] min-h-screen flex items-center">
-      <div className="w-8/12 flex flex-col ml-12">
+      <div className="w-8/12 hidden md:flex  flex-col ml-12">
         <p className="font-semibold text-white text-8xl font-noto">
           Welcome Back .!
         </p>
@@ -49,7 +49,7 @@ export default function Login() {
           </div>
         </div>
         <div className='absolute top-[-20px] left-[-100px] z-0'>
-          <div className='bg-gradient-to-b from-[#530061] from-0%  to-[#0D0A30] to-100% h-52 w-52 rounded-full'></div>
+          <div className='bg-gradient-to-b from-[#530061] from-0%  to-[#0D0A30] to-100% h-32 md:h-52 w-32 md:w-52 rounded-full'></div>
         </div>
         <div className='absolute bottom-[-60px] right-[-30px]'>
           <div className='bg-gradient-to-b from-[#300061] from-0%  to-[#0A1030] h-36 w-36 rounded-full'></div>
